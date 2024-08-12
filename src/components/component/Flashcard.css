@@ -1,0 +1,27 @@
+/* Flashcard.css */
+
+.perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  
+  .flipped .transform-style-preserve-3d {
+    transform: rotateY(180deg);
+  }
+  
+  /* Ensure text is not reversed on the back side */
+  .card-back-content {
+    transform: rotateY(180deg) scaleX(-1); /* Correct orientation for flipped side */
+  }
+  
