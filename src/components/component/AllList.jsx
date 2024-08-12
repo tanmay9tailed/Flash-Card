@@ -9,14 +9,14 @@ const AllList = () => {
   }, []);
 
   const fetchFlashcards = () => {
-    fetch('http://localhost:3001/flashcards')
+    fetch('https://flash-card-backend-mongo.vercel.app/flashcards')
       .then((response) => response.json())
       .then((data) => setFlashcards(data))
       .catch((error) => console.error('Error fetching flashcards:', error));
   };
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:3001/flashcards/${id}`, {
+    fetch(`https://flash-card-backend-mongo.vercel.app/flashcards/${id}`, {
       method: 'DELETE',
     })
       .then((response) => {

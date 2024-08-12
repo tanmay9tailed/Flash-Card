@@ -16,7 +16,7 @@ const AdminLogin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:3001/adminlogin", {
+    fetch("https://flash-card-backend-mongo.vercel.app/adminlogin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

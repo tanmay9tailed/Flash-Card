@@ -11,7 +11,7 @@ const FlashcardForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch("http://localhost:3001/flashcards", {
+      const response = await fetch("https://flash-card-backend-mongo.vercel.app/flashcards", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

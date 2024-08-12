@@ -11,7 +11,7 @@ function FlashcardList() {
   }, []);
 
   const fetchFlashcards = () => {
-    fetch("http://localhost:3001/flashcards")
+    fetch("https://flash-card-backend-mongo.vercel.app/flashcards")
       .then((response) => response.json())
       .then((data) => {
         setFlashcards(data);
